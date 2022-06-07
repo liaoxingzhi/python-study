@@ -8,3 +8,4 @@ for i in range(1, 10):
     for j in range(1, i + 1):
         # end=' ':每次内循环以end里面的内容连接
         print(j, '*', i, '=', j * i, end='  ')
+
