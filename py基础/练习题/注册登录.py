@@ -1,5 +1,6 @@
 # 做一个注册登录系统
 import time
+
 name = []
 file = {}
 print('-------------------注册登录系统------------------')
@@ -16,7 +17,7 @@ while 1:
                 print('注册成功！')
                 file[user_name] = pass_word1
                 for i in file:
-                    print('账号：',i,'\n密码：',file[i])
+                    print('账号：', i, '\n密码：', file[i])
                 break
             else:
                 print('两次输入密码不一致')
@@ -52,7 +53,7 @@ while 1:
                                     print('密码修改成功！')
                                     file[user_name] = pass_word3
                                     for i in file:
-                                        print('账号：',i,'\r新密码：',file[i])
+                                        print('账号：', i, '\r新密码：', file[i])
                                     sum = sum + 1
                                     break
                                 elif pass_word3 == file[user_name]:
@@ -65,7 +66,7 @@ while 1:
                     print('该账户不存在，请注册后再登录')
     elif choice == 4:
         print('感谢您的使用,程序将在5秒后退出')
-        for i in range(1,5):
+        for i in range(1, 5):
             time.sleep(1)
             print('程序将在{}秒后退出'.format(5 - i))
         break
