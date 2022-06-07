@@ -44,23 +44,23 @@ while 1:
                             break
                         else:
                             pass_word = input('请输入旧密码：')
-                            if pass_word == file[user_name]:
-                                while 1:
-                                    pass_word3 = input('请输入新密码：')
-                                    pass_word4 = input('请再次输入新密码：')
-                                    if pass_word3 == pass_word4 and pass_word3 != file[user_name]:
-                                        print('密码修改成功！')
-                                        file[user_name] = pass_word3
-                                        for i in file:
-                                            print('账号：',i,'\r新密码：',file[i])
-                                        sum = sum + 1
-                                        break
-                                    elif pass_word3 == file[user_name]:
-                                        print('新密码与旧密码一致，请重新输入')
-                                    else:
-                                        print('密码错误，请重新输入')
-                            else:
-                                print('密码错误，请重新输入')
+                        if pass_word == file[user_name]:
+                            while 1:
+                                pass_word3 = input('请输入新密码：')
+                                pass_word4 = input('请再次输入新密码：')
+                                if pass_word3 == pass_word4 and pass_word3 != file[user_name]:
+                                    print('密码修改成功！')
+                                    file[user_name] = pass_word3
+                                    for i in file:
+                                        print('账号：',i,'\r新密码：',file[i])
+                                    sum = sum + 1
+                                    break
+                                elif pass_word3 == file[user_name]:
+                                    print('新密码与旧密码一致，请重新输入')
+                                else:
+                                    print('密码错误，请重新输入')
+                        else:
+                            print('密码错误，请重新输入')
                 else:
                     print('该账户不存在，请注册后再登录')
     elif choice == 4:
